@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "5469342D-5717-4129-AACA-1BF7FAA4E1B4"
+   type = "0"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "53679855-08B1-4278-82D9-0E797F768C4C"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "AppIOS/Controller/PersonViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "19"
+            endingLineNumber = "19"
+            landmarkName = "PersonViewController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  uuid = "53679855-08B1-4278-82D9-0E797F768C4C - 201aae2ecf5336dd"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "AppIOS.PersonViewController.lblName.getter : Swift.Optional&lt;__C.UILabel&gt;"
+                  moduleName = "AppIOS"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/lizasapsaj/Desktop/AppIOS/AppIOS/Controller/PersonViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "19"
+                  endingLineNumber = "19"
+                  offsetFromSymbolStart = "88">
+               </Location>
+               <Location
+                  uuid = "53679855-08B1-4278-82D9-0E797F768C4C - f224f405fdd96629"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "AppIOS.PersonViewController.lblName.setter : Swift.Optional&lt;__C.UILabel&gt;"
+                  moduleName = "AppIOS"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/lizasapsaj/Desktop/AppIOS/AppIOS/Controller/PersonViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "19"
+                  endingLineNumber = "19"
+                  offsetFromSymbolStart = "155">
+               </Location>
+               <Location
+                  uuid = "53679855-08B1-4278-82D9-0E797F768C4C - 401f6254e57a912b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "AppIOS.PersonViewController.lblName.modify : Swift.Optional&lt;__C.UILabel&gt;"
+                  moduleName = "AppIOS"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/lizasapsaj/Desktop/AppIOS/AppIOS/Controller/PersonViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "59">
+               </Location>
+               <Location
+                  uuid = "53679855-08B1-4278-82D9-0E797F768C4C - b142725118301bb5"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "AppIOS.PersonViewController.lblName.modify : Swift.Optional&lt;__C.UILabel&gt; with unmangled suffix &quot;.resume.0&quot;"
+                  moduleName = "AppIOS"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/lizasapsaj/Desktop/AppIOS/AppIOS/Controller/PersonViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "19"
+                  endingLineNumber = "19"
+                  offsetFromSymbolStart = "64">
+               </Location>
+               <Location
+                  uuid = "53679855-08B1-4278-82D9-0E797F768C4C - 5036548efcd9fad7"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "AppIOS.PersonViewController.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; AppIOS.PersonViewController"
+                  moduleName = "AppIOS"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/lizasapsaj/Desktop/AppIOS/AppIOS/Controller/PersonViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "19"
+                  endingLineNumber = "19"
+                  offsetFromSymbolStart = "577">
+               </Location>
+               <Location
+                  uuid = "53679855-08B1-4278-82D9-0E797F768C4C - 881a6b54b66b26e1"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "AppIOS.PersonViewController.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;AppIOS.PersonViewController&gt;"
+                  moduleName = "AppIOS"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/lizasapsaj/Desktop/AppIOS/AppIOS/Controller/PersonViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "19"
+                  endingLineNumber = "19"
+                  offsetFromSymbolStart = "518">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

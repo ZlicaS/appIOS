@@ -7,7 +7,14 @@
 
 import UIKit
 
+protocol PersonViewControllerDelegate : class {
+    func titleDidChange( row : Int, to title: String)
+}
+
 class PersonViewController: UIViewController {
+    
+    weak var delegate: PersonViewControllerDelegate?
+    
     
     @IBOutlet weak var lblName: UILabel!
     @IBOutlet weak var lblLastName: UILabel!
@@ -19,7 +26,9 @@ class PersonViewController: UIViewController {
     
     @IBOutlet weak var lblAge2: UILabel!
     var selectedPerson: Person?
+    var selectedRow:Int?
     
+    @IBOutlet weak var lblGender2: UILabel!
     var dl = DataListViewController()
     
     override func viewDidLoad() {
@@ -27,7 +36,10 @@ class PersonViewController: UIViewController {
         lblName1.text = selectedPerson?.name
         lblLastName2.text = selectedPerson?.lastName
         lblAge2.text = String(selectedPerson!.age)
-        lblGender.text = lblGender.text! + "  Male"
+        
+        let e = Person.Gender.male
+        print(e.rawValue)
+        lblGender2.text = e.rawValue
         
         
     }
@@ -35,7 +47,7 @@ class PersonViewController: UIViewController {
     
     
     @IBAction func exitButtonPressed(_ snder: Any) {
-        dl.reload(selected: selectedPerson!)
+        delegate?.titleDidChange(row: selectedRow!, to: String(selectedPerson!.age))
         self.dismiss(animated: true, completion: nil)
     }
     
@@ -51,7 +63,7 @@ class PersonViewController: UIViewController {
             }
             
         }
-       
+        
     }
     func alert(){
         let alert = UIAlertController(title: "Alert", message: "Age must be in range 0-100", preferredStyle: UIAlertController.Style.alert)

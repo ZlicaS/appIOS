@@ -8,16 +8,15 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
     
     @IBOutlet weak var cocoaButton: UIButton!
     
     @IBAction func dataListPressed(_ sender: UIButton) {
-        //self.performSegue(withIdentifier: "goToDataList", sender: self)
-   
+        
     }
     
- 
+    
     @IBAction func cocaPressed(_ sender: UIButton) {
     }
     
@@ -28,12 +27,10 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-       
-        // Do any additional setup after loading the view.
     }
     
-   
-
-
+    
+    
+    
 }
 

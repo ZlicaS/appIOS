@@ -11,16 +11,11 @@ class DataListViewController: UITableViewController {
     
     var persons = [Person]()
     
-
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         tableView.register(UINib(nibName: "TableViewCell", bundle: nil), forCellReuseIdentifier: "TableViewCell")
-        print("uslo")
-        
-        
-        
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -41,24 +36,11 @@ class DataListViewController: UITableViewController {
     // MARK: - Table view data source
     
     override func numberOfSections(in tableView: UITableView) -> Int {
-       
         return 1
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        
         return persons.count
-    }
-    
-    func reload(selected: Person){
-        let indexPath = IndexPath(item: 3, section: 0)
-       
-        
-       
-        
-        
-        tableView.reloadRows(at: [indexPath], with: .top)
-        tableView.reloadData()
     }
     
     
@@ -73,21 +55,29 @@ class DataListViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         performSegue(withIdentifier: "goToPerson", sender: self)
-       // tableView.deselectRow(at: indexPath, animated: true)
-
     }
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let destinationVC = segue.destination as! PersonViewController
-       
-       if let indexPath = tableView.indexPathForSelectedRow{
-            destinationVC.selectedPerson = persons[indexPath.row]
-       
-       }
-    }
-  
+        destinationVC.delegate = self
     
+        if let indexPath = tableView.indexPathForSelectedRow{
+            destinationVC.selectedPerson = persons[indexPath.row]
+            destinationVC.selectedRow = indexPath.row
+            
+        }
+    }
     
     @IBAction func backButtonPressed(_ sender: Any) {
         self.dismiss(animated: true, completion: nil)
     }
+}
+
+extension DataListViewController: PersonViewControllerDelegate {
+    func titleDidChange(row: Int, to title: String) {
+        let indexPath = IndexPath(item: row, section: 0)
+        tableView.reloadRows(at: [indexPath], with: .top)
+        let cell = tableView.cellForRow(at: indexPath) as! TableViewCell
+        cell.lblAge.text = title
+    }
+    
 }
