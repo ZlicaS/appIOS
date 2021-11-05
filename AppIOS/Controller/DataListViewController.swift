@@ -11,6 +11,8 @@ class DataListViewController: UITableViewController {
     
     var persons = [Person]()
     
+
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -44,7 +46,19 @@ class DataListViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        
         return persons.count
+    }
+    
+    func reload(selected: Person){
+        let indexPath = IndexPath(item: 3, section: 0)
+       
+        
+       
+        
+        
+        tableView.reloadRows(at: [indexPath], with: .top)
+        tableView.reloadData()
     }
     
     
@@ -65,8 +79,6 @@ class DataListViewController: UITableViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let destinationVC = segue.destination as! PersonViewController
        
-        
-        
        if let indexPath = tableView.indexPathForSelectedRow{
             destinationVC.selectedPerson = persons[indexPath.row]
        
@@ -75,4 +87,7 @@ class DataListViewController: UITableViewController {
   
     
     
+    @IBAction func backButtonPressed(_ sender: Any) {
+        self.dismiss(animated: true, completion: nil)
+    }
 }
