@@ -10,13 +10,15 @@ import UIKit
 class ViewController: UIViewController {
 
     
+    @IBOutlet weak var cocoaButton: UIButton!
     
     @IBAction func dataListPressed(_ sender: UIButton) {
         //self.performSegue(withIdentifier: "goToDataList", sender: self)
    
     }
     
-    @IBAction func cocoapodsPressed(_ sender: UIButton) {
+ 
+    @IBAction func cocaPressed(_ sender: UIButton) {
     }
     
     

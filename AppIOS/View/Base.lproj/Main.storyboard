@@ -16,11 +16,38 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Bt2-EM-iMv">
-                                <rect key="frame" x="0.0" y="225" width="414" height="353"/>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Bt2-EM-iMv">
+                                <rect key="frame" x="56" y="179" width="307" height="458"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eEn-Kk-DiO">
-                                        <rect key="frame" x="180" y="81" width="109" height="36"/>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lnb-Vc-OMX">
+                                        <rect key="frame" x="93" y="285" width="120" height="36"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="0.48581900700000002" green="0.70881593229999995" blue="0.81821065989999997" alpha="0.90295911819999997" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <state key="normal" title="WebView test">
+                                            <color key="titleColor" systemColor="labelColor"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="webViewPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mZo-YG-l62"/>
+                                            <segue destination="9SR-dg-kPt" kind="presentation" identifier="goToWeb" id="t7u-Fg-K8i"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z9i-YU-4Gm">
+                                        <rect key="frame" x="93" y="157" width="101" height="36"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="0.48581900700000002" green="0.70881593229999995" blue="0.81821065989999997" alpha="0.90295911819999997" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <state key="normal" title="Cocoapods">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="p2t-vo-y9y" kind="presentation" identifier="goToCocoa" id="aeo-ME-yeS"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eEn-Kk-DiO">
+                                        <rect key="frame" x="93" y="45" width="109" height="36"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" red="0.48581900700000002" green="0.70881593229999995" blue="0.81821065989999997" alpha="0.90295911819999997" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                         <state key="normal" title="Data list test">
@@ -31,72 +58,65 @@
                                             <segue destination="aip-gr-vfF" kind="presentation" identifier="goToDataList" id="lqi-ZA-sbI"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CvW-M6-Hyp">
-                                        <rect key="frame" x="180" y="174" width="101" height="36"/>
-                                        <color key="backgroundColor" red="0.48581900700000002" green="0.70881593229999995" blue="0.81821065989999997" alpha="0.90295911819999997" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                        <state key="normal" title="Cocoapods">
-                                            <color key="titleColor" systemColor="labelColor"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="cocoapodsPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="KDF-Fc-Syu"/>
-                                            <segue destination="p2t-vo-y9y" kind="presentation" identifier="goToCocoa" id="2rc-05-Hek"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lnb-Vc-OMX">
-                                        <rect key="frame" x="180" y="275" width="120" height="36"/>
-                                        <color key="backgroundColor" red="0.48581900700000002" green="0.70881593229999995" blue="0.81821065989999997" alpha="0.90295911819999997" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                        <state key="normal" title="WebView test">
-                                            <color key="titleColor" systemColor="labelColor"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="webViewPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mZo-YG-l62"/>
-                                        </connections>
-                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <constraints>
-                                    <constraint firstItem="eEn-Kk-DiO" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="CvW-M6-Hyp" secondAttribute="leading" id="4Oh-w0-uny"/>
-                                    <constraint firstItem="CvW-M6-Hyp" firstAttribute="leading" secondItem="Lnb-Vc-OMX" secondAttribute="leading" id="Ep4-YR-TRd"/>
-                                    <constraint firstItem="eEn-Kk-DiO" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Lnb-Vc-OMX" secondAttribute="leading" id="F7R-JS-0ZN"/>
-                                    <constraint firstItem="eEn-Kk-DiO" firstAttribute="top" secondItem="Bt2-EM-iMv" secondAttribute="top" constant="81" id="FTJ-UE-MT8"/>
-                                    <constraint firstItem="Lnb-Vc-OMX" firstAttribute="top" secondItem="CvW-M6-Hyp" secondAttribute="bottom" constant="65" id="K6o-ee-3P1"/>
-                                    <constraint firstAttribute="trailing" secondItem="CvW-M6-Hyp" secondAttribute="trailing" constant="133" id="L83-Ws-9wa"/>
-                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Lnb-Vc-OMX" secondAttribute="trailing" constant="20" symbolic="YES" id="WOF-YW-F5w"/>
-                                    <constraint firstItem="CvW-M6-Hyp" firstAttribute="top" secondItem="eEn-Kk-DiO" secondAttribute="bottom" constant="57" id="bp6-qy-v8B"/>
-                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="eEn-Kk-DiO" secondAttribute="trailing" constant="20" symbolic="YES" id="mUN-4M-KrJ"/>
-                                    <constraint firstItem="CvW-M6-Hyp" firstAttribute="leading" secondItem="eEn-Kk-DiO" secondAttribute="leading" id="vIo-dO-sWC"/>
-                                </constraints>
                             </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <constraints>
-                            <constraint firstItem="Bt2-EM-iMv" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="0Hm-1M-CAj"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Bt2-EM-iMv" secondAttribute="bottom" constant="284" id="Aee-J4-zP6"/>
-                            <constraint firstItem="Bt2-EM-iMv" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="gYl-mC-gHV"/>
-                            <constraint firstItem="Bt2-EM-iMv" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="181" id="ttg-PH-czc"/>
-                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="115.94202898550725" y="78.348214285714278"/>
         </scene>
-        <!--View Controller-->
+        <!--Web View Controller-->
+        <scene sceneID="AWx-1B-IW5">
+            <objects>
+                <viewController id="9SR-dg-kPt" customClass="WebViewController" customModule="AppIOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="PdI-FD-6Nf">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yR5-ZN-w6x">
+                                <rect key="frame" x="0.0" y="91" width="414" height="751"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="xbB-Xv-o9Z"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="yR5-ZN-w6x" firstAttribute="trailing" secondItem="xbB-Xv-o9Z" secondAttribute="trailing" id="38o-Bn-ukf"/>
+                            <constraint firstAttribute="bottom" secondItem="yR5-ZN-w6x" secondAttribute="bottom" id="PhF-cv-NDM"/>
+                            <constraint firstItem="yR5-ZN-w6x" firstAttribute="leading" secondItem="PdI-FD-6Nf" secondAttribute="leading" id="eph-ld-T6b"/>
+                            <constraint firstItem="yR5-ZN-w6x" firstAttribute="top" secondItem="xbB-Xv-o9Z" secondAttribute="top" constant="91" id="mMK-tl-IWo"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="webView" destination="yR5-ZN-w6x" id="OHN-tn-yme"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hCi-Ug-qr1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-315.94202898550725" y="868.52678571428567"/>
+        </scene>
+        <!--Cocoa View Controller-->
         <scene sceneID="Xan-p6-1Gk">
             <objects>
-                <viewController id="p2t-vo-y9y" sceneMemberID="viewController">
+                <viewController id="p2t-vo-y9y" customClass="CocoaViewController" customModule="AppIOS" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="gJx-bP-Ubn">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="40b-hP-7Pq">
-                                <rect key="frame" x="75" y="333" width="274" height="34"/>
+                                <rect key="frame" x="75" y="323" width="274" height="44"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="274" id="PQF-nB-Nb3"/>
-                                    <constraint firstAttribute="height" constant="34" id="RfM-5r-XCl"/>
+                                    <constraint firstAttribute="height" constant="44" id="kgf-5t-5iI"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -105,6 +125,9 @@
                                 <rect key="frame" x="20" y="24" width="72" height="22"/>
                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button" image="xmark" catalog="system"/>
+                                <connections>
+                                    <action selector="buttonPress:" destination="p2t-vo-y9y" eventType="touchUpInside" id="4dy-14-xAX"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="jpG-Az-bUh"/>
@@ -112,9 +135,8 @@
                         <constraints>
                             <constraint firstItem="jpG-Az-bUh" firstAttribute="trailing" secondItem="40b-hP-7Pq" secondAttribute="trailing" constant="65" id="CWv-WC-PnG"/>
                             <constraint firstItem="jpG-Az-bUh" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Nte-34-JYx" secondAttribute="trailing" symbolic="YES" id="GL2-OY-EC0"/>
-                            <constraint firstItem="jpG-Az-bUh" firstAttribute="bottom" secondItem="40b-hP-7Pq" secondAttribute="bottom" constant="441" id="PSH-x7-qtn"/>
-                            <constraint firstItem="40b-hP-7Pq" firstAttribute="top" secondItem="jpG-Az-bUh" secondAttribute="top" constant="333" id="S8Z-6q-49W"/>
                             <constraint firstItem="Nte-34-JYx" firstAttribute="leading" secondItem="gJx-bP-Ubn" secondAttribute="leadingMargin" id="byr-a3-AOT"/>
+                            <constraint firstItem="jpG-Az-bUh" firstAttribute="bottom" secondItem="40b-hP-7Pq" secondAttribute="bottom" constant="441" id="hod-Aj-dAy"/>
                             <constraint firstItem="Nte-34-JYx" firstAttribute="top" secondItem="jpG-Az-bUh" secondAttribute="top" constant="24" id="j9P-XU-NJS"/>
                             <constraint firstItem="40b-hP-7Pq" firstAttribute="leading" secondItem="jpG-Az-bUh" secondAttribute="leading" constant="75" id="uL6-2I-iE8"/>
                         </constraints>
