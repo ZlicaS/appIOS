@@ -22,6 +22,9 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lnb-Vc-OMX">
                                         <rect key="frame" x="93" y="285" width="120" height="36"/>
                                         <color key="backgroundColor" red="0.48581900700000002" green="0.70881593229999995" blue="0.81821065989999997" alpha="0.90295911819999997" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="120" id="Ij0-CU-uuc"/>
+                                        </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                         <state key="normal" title="WebView test">
                                             <color key="titleColor" systemColor="labelColor"/>
@@ -58,6 +61,7 @@
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
                                     <constraint firstItem="Z9i-YU-4Gm" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Lnb-Vc-OMX" secondAttribute="leading" id="I1J-Js-gv8"/>
+                                    <constraint firstItem="Lnb-Vc-OMX" firstAttribute="leading" secondItem="Bt2-EM-iMv" secondAttribute="leading" constant="93" id="MZo-4S-wg2"/>
                                     <constraint firstItem="Lnb-Vc-OMX" firstAttribute="top" secondItem="Z9i-YU-4Gm" secondAttribute="bottom" constant="92" id="ToV-6P-jO8"/>
                                     <constraint firstItem="Z9i-YU-4Gm" firstAttribute="top" secondItem="eEn-Kk-DiO" secondAttribute="bottom" constant="76" id="gCT-xP-dm2"/>
                                     <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="eEn-Kk-DiO" secondAttribute="trailing" constant="20" symbolic="YES" id="i5j-6s-hvG"/>
@@ -65,7 +69,6 @@
                                     <constraint firstItem="Z9i-YU-4Gm" firstAttribute="leading" secondItem="Bt2-EM-iMv" secondAttribute="leading" constant="93" id="poF-ld-W7D"/>
                                     <constraint firstItem="Z9i-YU-4Gm" firstAttribute="top" secondItem="Bt2-EM-iMv" secondAttribute="top" constant="157" id="xqk-1g-PnQ"/>
                                     <constraint firstItem="Z9i-YU-4Gm" firstAttribute="leading" secondItem="eEn-Kk-DiO" secondAttribute="leading" id="yeb-v6-Cev"/>
-                                    <constraint firstAttribute="trailing" secondItem="Lnb-Vc-OMX" secondAttribute="trailing" constant="89" id="ziK-be-xee"/>
                                 </constraints>
                             </view>
                         </subviews>

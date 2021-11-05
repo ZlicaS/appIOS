@@ -38,7 +38,6 @@ class PersonViewController: UIViewController {
         lblAge2.text = String(selectedPerson!.age)
         
         let e = Person.Gender.male
-        print(e.rawValue)
         lblGender2.text = e.rawValue
         
         
